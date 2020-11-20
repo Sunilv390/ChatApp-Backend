@@ -13,7 +13,7 @@ namespace BusinessLayer.Service
         private readonly IUserRL userRL;
         public UserBL(IUserRL _userRL)
         {
-            _userRL = _userRL;
+            userRL = _userRL;
         }
 
         public ResponseData SignUp(UserSignUp registration)
