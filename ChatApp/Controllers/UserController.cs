@@ -1,6 +1,7 @@
 ﻿using BusinessLayer.Interface;
 using CommonLayer.Models.RequestData;
 using CommonLayer.Models.Response;
+using CommonLayer.MSMQService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +17,7 @@ namespace ChatApp.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        MessageSender sender = new MessageSender();
         private readonly IUserBL userBL;
         private readonly IConfiguration config;
 
@@ -48,6 +50,9 @@ namespace ChatApp.Controllers
                 {
                     success = true;
                     message = "Account Created Successfully";
+                    string messageSender = "SignUp successful with" + "\n Name : " + Convert.ToString(registration.FirstName) + "\n Email : " + Convert.ToString(registration.EmailAddress) +
+                        "\n Password : " + Convert.ToString(registration.Password);
+                    sender.Message(messageSender);
                     return Ok(new { success, message, data });
                 }
             }

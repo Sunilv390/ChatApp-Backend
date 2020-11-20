@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonLayer", "CommonLayer\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepositoryLayer", "RepositoryLayer\RepositoryLayer.csproj", "{5E9FA3A3-E123-4FDD-8DBA-4F9D1681669D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSMQListner", "MSMQListner\MSMQListner.csproj", "{7A678A09-0E9E-4804-9C6F-4E45B37A926A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{5E9FA3A3-E123-4FDD-8DBA-4F9D1681669D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E9FA3A3-E123-4FDD-8DBA-4F9D1681669D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9FA3A3-E123-4FDD-8DBA-4F9D1681669D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A678A09-0E9E-4804-9C6F-4E45B37A926A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A678A09-0E9E-4804-9C6F-4E45B37A926A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A678A09-0E9E-4804-9C6F-4E45B37A926A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A678A09-0E9E-4804-9C6F-4E45B37A926A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
